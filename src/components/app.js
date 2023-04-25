@@ -12,10 +12,22 @@ export default class App extends Component {
   render() {
     return (
       <div className='app'>
-        <h1>6 Component Project</h1>
-        <Hide />
-        <Counter />
-
+        <h1>6 Components</h1>
+        <div>
+          <Align />
+        </div>
+        <div>
+          <Color />
+        </div>
+        <div>
+          <Hide />
+        </div>
+        <div>
+          <Text />
+        </div>
+        <div>
+          <Counter />
+        </div>
       </div>
     );
   }

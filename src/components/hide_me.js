@@ -8,8 +8,9 @@ export default function Hide() {
 
     return (
         <div>
-            <h2 style={{opacity: opacity}}>Hide</h2>
+            <h2 style={{ opacity: opacity}}>Hide</h2>
             <input type="range" min="0%" max="100%" onChange={handleOpacity} />
+            <button className="submit_opacity">submit</button>
         </div>
-    );
-};
+    )
+}
