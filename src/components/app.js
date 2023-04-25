@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+
 import Align from "./align"
 import Color from "./color_me"
 import Counter from "./counter"
@@ -23,6 +24,9 @@ export default class App extends Component {
         </div>
         <div>
           <Text />
+        </div>
+        <div>
+          <Counter />
         </div>
       </div>
     );
