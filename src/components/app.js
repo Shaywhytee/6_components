@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+
 import Align from "./align"
 import Color from "./color_me"
 import Counter from "./counter"
@@ -11,8 +12,10 @@ export default class App extends Component {
   render() {
     return (
       <div className='app'>
-        <h1>DevCamp React Starter</h1>
-        <h2>React Redux Router</h2>
+        <h1>6 Component Project</h1>
+        <Hide />
+        <Counter />
+
       </div>
     );
   }
