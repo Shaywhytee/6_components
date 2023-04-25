@@ -11,8 +11,19 @@ export default class App extends Component {
   render() {
     return (
       <div className='app'>
-        <h1>DevCamp React Starter</h1>
-        <h2>React Redux Router</h2>
+        <h1>6 Components</h1>
+        <div>
+          <Align />
+        </div>
+        <div>
+          <Color />
+        </div>
+        <div>
+          <Hide />
+        </div>
+        <div>
+          <Text />
+        </div>
       </div>
     );
   }
