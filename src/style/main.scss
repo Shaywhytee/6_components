@@ -14,15 +14,56 @@ html {
 body {
     overflow-x: hidden;
     font-weight: normal;
-
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     -webkit-tap-highlight-color: transparent;
+
+    background: radial-gradient(circle, rgba(80,80,80,1) 50%, rgba(0,0,0,1) 100%);
 }
 
 .app {
-    margin-top: 2rem;
+    margin-top: 350px;
     display: grid;
-    justify-items: center;
+    grid-template-rows: 1fr 2fr 1fr;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+.submit_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 40vh;
+    width: 40vw;
+    background: linear-gradient(180deg, rgba(255,206,206,1) 0%, rgba(255,174,174,1) 50%, rgba(255,206,206,1) 100%);
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .2);
+}
+
+input {
+    align-self: center;
+    background: linear-gradient(180deg, rgba(167,167,167,1) 0%, rgba(255,255,255,1) 50%, rgba(167,167,167,1) 100%);
+    width: 10vw;
+    height: 5vh;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+button {
+    background: radial-gradient(circle, rgba(80,80,80,1) 50%, rgba(0,0,0,1) 100%);
+    color: white;
+    width: 10vw;
+    height: 5vh;
+}
+
+h1 {
+    font-size: 5rem;
+    text-align: center; 
+}
+
+h2 {
+    font-size: 32px;
+}
+
