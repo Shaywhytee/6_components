@@ -5,12 +5,15 @@ export default function Align(props) {
   const [align, setAlign] = useState("left");
   function leftAlign() {
     setAlign("left");
+    props.onAlignChange(align)
   };
   function centerAlign() {
     setAlign("center");
+    props.onAlignChange(align)
   };
   function rightAlign() {
     setAlign("right");
+    props.onAlignChange(align)
   };
   return (
     <div>
