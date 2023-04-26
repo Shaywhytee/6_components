@@ -13,6 +13,7 @@ export default function Counter() {
   
     return (
     <div>
+      <h2>Counter</h2>
       <button onClick={decrementCount}>-</button>
       <span>{count}</span>
       <button onClick={incrementCount}>+</button>
