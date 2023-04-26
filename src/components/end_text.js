@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function EndText(props) {
-    const { text = '', color = '', backgroundColor = '', font = '', fontSize= '', opacity = 1 } = props;
+    const { text = '', color = '', backgroundColor = '', font = '', fontSize= '', opacity = '' } = props;
 
     return (
         <div style={{ color: color, backgroundColor: backgroundColor, fontFamily: font, opacity: opacity, fontSize: fontSize }}>

@@ -17,8 +17,10 @@ export default function Color(props) {
   return (
     <div>
       <h2 style={{ color: color }}>{text}</h2>
-      <input type="color" value={color} onChange={handleColorChange} />
-      <input type="text" value={text} onChange={handleTextChange} />
+
+      <div className="input_color"><input type="color" value={color} onChange={handleColorChange} /></div>
+
+      <div className="input_text"><input type="text" value={text} onChange={handleTextChange} /></div>
     </div>
   );
 };

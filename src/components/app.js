@@ -78,7 +78,7 @@ export default function App() {
         return (
           <Hide
             onSubmit={handleSubmit}
-            onChangeOpacity={setOpacity}
+            onOpacityChange={setOpacity}
             color={color}
             text={text}
             backgroundColor={backgroundColor}
@@ -106,8 +106,9 @@ export default function App() {
   return (
     <div className="app">
     <h1>Title Style</h1>
-    {renderStep()}
+    <div className='submit_container'>{renderStep()}
     {<button onClick={handleSubmit}>Submit</button>}
+    </div>
   </div>
   );
 }
