@@ -4,18 +4,20 @@ export default function Text(props) {
     const [fontSize, setFontSize] = useState(16);
     const [sizeChange, setSizeChange] = useState(1);
 
-    function handleSizeInput(change) {
-        const inputSizeChange = parseInt(change.target.value);
+    function handleSizeInput(event) {
+        const inputSizeChange = parseInt(event.target.value);
         if (!isNaN(inputSizeChange)){
-            setSizeChange(parseInt(change.target.value));
-            props.onSizeChange(parseInt(change.target.value));
+            setSizeChange(parseInt(event.target.value));
         }
     }
     function increaseSize() {
         setFontSize(fontSize + sizeChange);
+        props.onSizeChange(fontSize + "px");
+        
     }
     function decreaseSize() {
         setFontSize(fontSize - sizeChange);
+        props.onSizeChange(fontSize + "px");
     }
     return (
     <div>

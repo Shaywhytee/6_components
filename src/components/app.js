@@ -55,7 +55,7 @@ export default function App() {
         return (
           <Text
             onSubmit={handleSubmit}
-            onChangeSize={setFontSize}
+            onSizeChange={setFontSize}
             color={color}
             text={text}
             backgroundColor={backgroundColor}
@@ -66,7 +66,7 @@ export default function App() {
         return (
           <Align
             onSubmit={handleSubmit}
-            onChangeAlign={setAlign}
+            onAlignChange={setAlign}
             color={color}
             text={text}
             backgroundColor={backgroundColor}
@@ -79,6 +79,12 @@ export default function App() {
           <Hide
             onSubmit={handleSubmit}
             onChangeOpacity={setOpacity}
+            color={color}
+            text={text}
+            backgroundColor={backgroundColor}
+            font={font}
+            fontSize={fontSize}
+            align={align}
           />
         );
       case 7:
@@ -88,7 +94,7 @@ export default function App() {
             color={color}
             backgroundColor={backgroundColor}
             font={font}
-            textSize={textSize}
+            fontSize={fontSize}
             setOpacity={opacity}
             align={align}
           />

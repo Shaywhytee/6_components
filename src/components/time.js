@@ -14,4 +14,4 @@ export default function Time() {
             <p>{time.toLocaleTimeString()}</p>
         </div>
     );
-}
+};
